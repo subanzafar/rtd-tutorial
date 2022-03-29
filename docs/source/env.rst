@@ -14,8 +14,6 @@ Adding Graphenee
 ----------------
 First, add graphenee version to properties tag in pom.xml file.
 .. code-block:: console
-
-   <properties>
-		*other properties*
+	<properties>
 		<graphenee.version>3.5.0-SNAPSHOT</graphenee.version>
 	</properties>
