@@ -1,9 +1,10 @@
 Setting up the environment
 ==========================
 
-**Prerequisites**
-* VS Code or Eclipse
-* Project created in Java Spring Boot
+Prerequisites
+-------------
+- VS Code or Eclipse
+- Project created in Java Spring Boot
 
 .. note::
 
