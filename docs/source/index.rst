@@ -20,5 +20,4 @@ Contents
    whatis
    modules
    env
-   usage
    api
