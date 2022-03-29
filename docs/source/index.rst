@@ -18,6 +18,7 @@ Contents
 .. toctree::
 
    introduction
+   modules
    env
    usage
    api
