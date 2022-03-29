@@ -12,7 +12,8 @@ Prerequisites
 
 Adding Graphenee
 ----------------
-First, add graphenee version to properties tag in pom.xml file.
+First, add graphenee version to properties tag in pom.xml file:
+
 .. code-block:: console
 	<properties>
 		<graphenee.version>3.5.0-SNAPSHOT</graphenee.version>
