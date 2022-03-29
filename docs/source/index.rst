@@ -17,7 +17,7 @@ Contents
 
 .. toctree::
 
-   introduction
+   whatis
    modules
    env
    usage
