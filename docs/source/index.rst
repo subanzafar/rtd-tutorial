@@ -18,5 +18,6 @@ Contents
 .. toctree::
 
    introduction
+   env
    usage
    api
