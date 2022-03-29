@@ -18,7 +18,6 @@ Contents
 .. toctree::
 
    whatis
-   modules
    env
    usage
    api
