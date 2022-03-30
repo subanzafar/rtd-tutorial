@@ -12,7 +12,7 @@ Prerequisites
 
 Adding Graphenee
 ----------------
-First, add graphenee version to properties tag in pom.xml file at root of your project:
+First, add graphenee version to <properties> tag in pom.xml file:
 
 .. code-block:: html
    :linenos:
@@ -20,4 +20,21 @@ First, add graphenee version to properties tag in pom.xml file at root of your p
    <properties>
          <graphenee.version>3.5.0-SNAPSHOT</graphenee.version>
    </properties>
+   
+
+Second, add graphenee dependencies to <dependencies> tag in pom.xml:
+
+.. code-block:: html
+   :linenos:
+
+   <dependencies>
+         <dependency>
+			   <groupId>io.graphenee</groupId>
+			   <artifactId>gx-core</artifactId>
+		   </dependency>
+         <dependency>
+			   <groupId>io.graphenee</groupId>
+			   <artifactId>gx-flow</artifactId>
+		   </dependency>
+   </dependencies>
    
