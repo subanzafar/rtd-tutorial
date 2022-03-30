@@ -17,7 +17,7 @@ First, add graphenee version to properties tag in pom.xml file at root of your p
 .. code-block:: html
    :linenos:
 
-   <span><properties></span>
-   <span>      <graphenee.version>3.5.0-SNAPSHOT</graphenee.version></span>
-   <span></properties></span>
+   <properties>
+         <graphenee.version>3.5.0-SNAPSHOT</graphenee.version>
+   </properties>
    
