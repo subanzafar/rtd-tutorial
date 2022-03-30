@@ -28,13 +28,13 @@ Second, add graphenee dependencies to <dependencies> tag in pom.xml:
    :linenos:
 
    <dependencies>
-         <dependency>
-			   <groupId>io.graphenee</groupId>
-			   <artifactId>gx-core</artifactId>
-		   </dependency>
-         <dependency>
-			   <groupId>io.graphenee</groupId>
-			   <artifactId>gx-flow</artifactId>
-		   </dependency>
+   	<dependency>
+		<groupId>io.graphenee</groupId>
+		<artifactId>gx-core</artifactId>
+	</dependency>
+	<dependency>
+	 	<groupId>io.graphenee</groupId>
+		<artifactId>gx-flow</artifactId>
+	</dependency>
    </dependencies>
    
