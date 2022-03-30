@@ -54,3 +54,7 @@ Second, add graphenee dependency to <dependencyManagement> tag in pom.xml:
 		</dependency>
 	</dependencies>
    </dependencyManagement>
+
+.. note::
+
+   This graphenee version ``3.5.0-SNAPSHOT`` is compatible with Spring Boot version ``2.3.6.RELEASE``.
