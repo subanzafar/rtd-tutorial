@@ -4,7 +4,7 @@ Setting up the environment
 Prerequisites
 -------------
 - VS Code or Eclipse
-- Project created in Java Spring Boot
+- Project created in Java Spring Boot or `Start new project <https://spring.io/guides/gs/spring-boot/>`_
 
 .. note::
 
