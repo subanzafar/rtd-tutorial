@@ -38,7 +38,7 @@ Second, add graphenee dependencies to <dependencies> tag in pom.xml:
 	</dependency>
    </dependencies>
    
-Second, add graphenee dependency to <dependencyManagement> tag in pom.xml:
+Third, add graphenee dependency to <dependencyManagement> tag in pom.xml:
 
 .. code-block:: html
    :linenos:
@@ -58,3 +58,19 @@ Second, add graphenee dependency to <dependencyManagement> tag in pom.xml:
 .. note::
 
    This graphenee version ``3.5.0-SNAPSHOT`` is compatible with Spring Boot version ``2.3.6.RELEASE``.
+
+Forth, add Flyway Migration method in Main Application Class (Class having the main method):
+
+.. code-block:: html
+   :linenos:
+
+   @Bean
+   public FlywayMigrationStrategy flywayMigrationStrategy(GrapheneeCoreConfiguration graphenee) {
+	return new FlywayMigrationStrategy() {
+		@Override
+		public void migrate(Flyway flyway) {
+			flyway.migrate();
+		}
+	};
+   }
+ 
