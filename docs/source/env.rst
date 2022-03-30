@@ -38,3 +38,19 @@ Second, add graphenee dependencies to <dependencies> tag in pom.xml:
 	</dependency>
    </dependencies>
    
+Second, add graphenee dependency to <dependencyManagement> tag in pom.xml:
+
+.. code-block:: html
+   :linenos:
+
+   <dependencyManagement>
+   	<dependencies>
+		<dependency>
+			<groupId>io.graphenee</groupId>
+			<artifactId>gx</artifactId>
+			<version>${graphenee.version}</version>
+			<type>pom</type>
+			<scope>import</scope>
+		</dependency>
+	</dependencies>
+   </dependencyManagement>
