@@ -208,6 +208,11 @@ Now we have to add our view class into menu items of FlowSetup class:
       return items;
    }
 
+Our Web will look like:
+
+.. image:: images/listview.png
+   :width: 600
+
 Student List/Grid
 -----------------
 
