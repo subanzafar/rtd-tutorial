@@ -1,5 +1,5 @@
-Creating a view in Graphenee
-============================
+Creating a view in Graphenee Flow
+=================================
 Every class related to a view will be created inside ``/vaadin/`` folder.
 
 MainLayout Class
@@ -90,7 +90,7 @@ FlowSetup Class
    }
    
    
-So, these were the base classes we needed to display views of different lists of our models.\n Now we will create a Student entity model and other classes related:
+So, these were the base classes we needed to display views of different lists of our models. Now we will create a Student entity model and other classes related:
    
 Entity Model
 ------------
@@ -169,6 +169,45 @@ Data Service Implementation
    
 After these, we will head towards creating listview for our Student model:
 
+Student List View
+-----------------
+
+.. code-block:: html
+   :linenos:
+
+   @GxSecuredView(value = StudentListView.VIEW_NAME)
+   public class StudentListView extends GxVerticalLayoutView {
+
+      public static final String VIEW_NAME = "student";
+
+      @Override
+      public void afterNavigation(AfterNavigationEvent event) {
+         super.afterNavigation(event);
+      }
+
+      @Override
+      protected void decorateLayout(HasComponents rootLayout) {
+         super.decorateLayout(rootLayout);
+      }
+
+      @Override
+      protected String getCaption() {
+         return "Students";
+      }
+   }
+
+Now we have to add our view class into menu items of FlowSetup class:
+
+.. code-block:: html
+   :linenos:
+
+   @Override
+   public List<GxMenuItem> menuItems() {
+      List<GxMenuItem> items = new ArrayList<>();
+      items.add(GxMenuItem.create("Student", VaadinIcon.SPECIALIST.create(), StudentListView.class));
+      return items;
+   }
+
 Student List/Grid
 -----------------
 
@@ -211,37 +250,25 @@ Student List/Grid
          return new String[] { "firstName", "lastName", "email" };
       }
    }
-
-Student List View
------------------
+   
+As we have created Student List, we will autowire it into Student List View class. So, the methods below will be updated:
 
 .. code-block:: html
    :linenos:
-
-   @GxSecuredView(value = StudentListView.VIEW_NAME)
-   public class StudentListView extends GxVerticalLayoutView {
-
-      public static final String VIEW_NAME = "student";
-
-      @Autowired
-      StudentList list;
-
-      @Override
-      public void afterNavigation(AfterNavigationEvent event) {
-         list.refresh();
-      }
-
-      @Override
-      protected void decorateLayout(HasComponents rootLayout) {
-         rootLayout.add(list);
-      }
-
-      @Override
-      protected String getCaption() {
-         return "Students";
-      }
-   }
    
+   @Override
+   StudentList list;
+
+   @Override
+   public void afterNavigation(AfterNavigationEvent event) {
+      list.refresh();
+   }
+
+   @Override
+   protected void decorateLayout(HasComponents rootLayout) {
+      rootLayout.add(list);
+   }
+
 Student Form
 ------------
 
