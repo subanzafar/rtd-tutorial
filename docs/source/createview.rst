@@ -273,6 +273,11 @@ As we have created Student List, we will autowire it into Student List View clas
    protected void decorateLayout(HasComponents rootLayout) {
       rootLayout.add(list);
    }
+   
+After this, when we tap on Student menu item, list/grid will be displayed:
+
+.. image:: images/list.png
+ :width: 600
 
 Student Form
 ------------
