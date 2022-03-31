@@ -19,4 +19,3 @@ Contents
    env
    createview
    usage
-   api
