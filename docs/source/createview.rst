@@ -325,3 +325,10 @@ After creating the form, we will autowire form into Student list and update our 
    protected GxAbstractEntityForm<Student> getEntityForm(Student arg0) {
       return form;
    }
+   
+We can open the form using ``+`` button on top-left.
+
+.. image:: images/form.png
+ :width: 600
+ 
+ You can fill the fields and save records using SAVE button.
