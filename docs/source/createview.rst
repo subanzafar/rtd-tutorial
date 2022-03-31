@@ -211,7 +211,7 @@ Now we have to add our view class into menu items of FlowSetup class:
 Our Web will look like:
 
 .. image:: images/listview.png
-   :width: 600
+ :width: 600
 
 Student List/Grid
 -----------------
