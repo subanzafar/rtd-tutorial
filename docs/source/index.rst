@@ -17,5 +17,6 @@ Contents
    whatis
    modules
    env
+   createview
    usage
    api
