@@ -8,14 +8,14 @@ MainLayout Class
 .. code-block:: html
    :linenos:
 
-@Push
-public class MainLayout extends GxAbstractAppLayout {
+   @Push
+   public class MainLayout extends GxAbstractAppLayout {
+   
+      @Autowired
+      GxAbstractFlowSetup flowSetup;
 
-    @Autowired
-    GxAbstractFlowSetup flowSetup;
-
-    @Override
-    protected GxAbstractFlowSetup flowSetup() {
-        return flowSetup;
-    }
-}
+      @Override
+      protected GxAbstractFlowSetup flowSetup() {
+         return flowSetup;
+      }
+   }
