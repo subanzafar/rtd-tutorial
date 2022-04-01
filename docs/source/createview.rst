@@ -32,6 +32,8 @@ HomeView Class
    public class HomeView extends GxVerticalLayoutView {
       //any default component can be displayed
    }
+- @GxSecuredView - This annotation ensures that this view will only be accessed / visible to an authenticated user.
+- @Route - Vaadin provides the Router class to structure the navigation of your web application into logical parts.The router takes care of serving content when the user navigates within an application. It includes support for nested routes, access to route parameters, and more. You can use the @Route annotation to define any component as a route target for a given URL fragment.
    
 LoginView Class
 ---------------
@@ -56,6 +58,22 @@ LoginView Class
          return new MockUser();
       }
    }
+- onLogin() method will be triggered when user presses the Login Button.Here we return the MockUser() which will give us an Anonymous user to log in to the app.
+But if we want to return a user using credentials, we will update LoginView class as below: 
+
+.. code-block:: html
+   :linenos:
+
+   @Autowired
+   GxDataService dataService;
+    
+   @Override
+   protected GxAuthenticatedUser onLogin(LoginEvent event) throws AuthenticationFailedException, PasswordChangeRequiredException {
+         String userName = event.getUsername();
+         String password = event.getPassword();
+         GxUserAccountBean user = dataService.findUserAccountByUsernamePasswordAndNamespace(userName, password, namespace);
+         return new GxDashboardUser(user);
+      }
    
 FlowSetup Class
 ---------------
@@ -89,7 +107,8 @@ FlowSetup Class
          return "1.0";
       }
    }
-   
+- @Component - @Component is an annotation that allows Spring to automatically detect our custom beans.
+- @VaadinSessionScope - The @VaadinSessionScope annotation manages the Spring beans during the Vaadin session lifecycle. It ensures that the same bean instance is used during the whole Vaadin session.
    
 So, these were the base classes we needed to display views of different lists of our models. Now we will create a Student entity model and other classes related:
    
@@ -114,6 +133,12 @@ Entity Model
       private String lastName;
       private String email;
    }
+- @Data - This @Data annotation gives us the getters and setters for our model.
+- @Entity - The @Entity annotation specifies that the class is an entity and is mapped to a database table.
+- @NoArgsConstructor - This annotation will create default constructor for our model.
+- @AllArgsConstructor - This annotation will create constructor having all the arguments.
+- @EqualsAndHashCode - When we declare a class with @EqualsAndHashCode, Lombok generates implementations for the equals and hashCode methods.
+- @Id - This annotation will indicate the primary key.
 
 
 Entity Repository
@@ -124,6 +149,7 @@ Entity Repository
 
    public interface StudentRepository extends GxJpaRepository<Student, Integer> {
    }
+- JpaRepository is a JPA (Java Persistence API) specific extension of Repository. It contains the full API of CrudRepository and PagingAndSortingRepository. So it contains API for basic CRUD operations and also API for pagination and sorting.
    
 Data Service
 ------------
@@ -139,6 +165,7 @@ Data Service
 
       void deleteAll(Collection<Student> students);
    }
+We will declare the some crud methods to be implemented.
    
 Data Service Implementation
 ---------------------------
@@ -167,6 +194,7 @@ Data Service Implementation
          repository.deleteAll(students);
       }
    }
+Repository class will be used in implementation of service methods.
    
 After these, we will head towards creating listview for our Student model:
 
@@ -196,6 +224,9 @@ Student List View
          return "Students";
       }
    }
+- afterNavigation() method will be invoked when we tap on menu item for this view. i.e Student.
+- decorateLayout() method will be used to add components to root layout.
+- getCaption() will set the title for this view.
 
 Now we have to add our view class into menu items of FlowSetup class:
 
@@ -256,7 +287,10 @@ Student List/Grid
          return new String[] { "firstName", "lastName", "email" };
       }
    }
-   
+- @Scope - This annotation defines the life cycle and visibility of that bean in the contexts we use it.
+- We will inject our service here to use crud methods.
+- visibleProperties() - In this method, we will specify the columns that will be displayed in list. Column names here must match with attribute names of model.
+
 As we have created Student List, we will autowire it into Student List View class. So, the methods below will be updated:
 
 .. code-block:: html
