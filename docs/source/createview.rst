@@ -365,5 +365,6 @@ We can open the form using ``+`` button on top-left:
 
 .. image:: images/form.png
  :width: 600
+ :height: 400
 
  You can fill the fields and save records using SAVE button.
