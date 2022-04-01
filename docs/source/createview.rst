@@ -19,6 +19,7 @@ MainLayout Class
          return flowSetup;
       }
    }
+- @Push - When you need to update a UI from another UI, possibly of another user, or from a background thread running in the server, you usually want to have the update show immediately, not when the browser happens to make the next server request. For this purpose, you can use server push that sends the data to the browser immediately. Push is based on a client-server connection, usually a WebSocket connection, that the client establishes and the server can then use to send updates to the client.
 
 HomeView Class
 --------------
