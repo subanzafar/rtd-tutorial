@@ -326,7 +326,7 @@ After creating the form, we will autowire form into Student list and update our 
       return form;
    }
    
-We can open the form using ``+`` button on top-left.
+We can open the form using ``+`` button on top-left:
 
 .. image:: form.png
  :width: 600
