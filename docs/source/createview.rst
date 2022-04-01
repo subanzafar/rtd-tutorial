@@ -328,7 +328,7 @@ After creating the form, we will autowire form into Student list and update our 
    
 We can open the form using ``+`` button on top-left:
 
-.. image:: form.png
+.. image:: images/form.png
  :width: 600
- 
+
  You can fill the fields and save records using SAVE button.
