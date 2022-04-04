@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Graphenee'
+copyright = '2016, Farukh Ijaz'
+author = 'Farukh Ijaz'
 
 release = '0.1'
 version = '0.1.0'

@@ -5,9 +5,6 @@ Welcome to Graphenee's documentation!
 
 Graphenee word itself is a combination of Graphene and Enterprise Edition (ee). It is developed using Java, Spring Boot and Vaadin.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
 .. note::
 
    This project is under active development.
@@ -20,4 +17,9 @@ Contents
    whatis
    modules
    env
+<<<<<<< HEAD
    api
+=======
+   createview
+   usage
+>>>>>>> 31db11505a6939bace71585ee24fd553889c5677
