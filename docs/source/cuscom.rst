@@ -29,11 +29,15 @@ In the Courses Tab of StudentForm, we wil add our TwinColGrid component:
    CourseDataService courseDataService;
    
    TwinColGrid<Course> courses;
-       
-   courses = new TwinColGrid<Course>()
-         .addFilterableColumn(Course::getCourseName, "Course Name", "Course Name", true)
-         .withLeftColumnCaption("Available Courses").withRightColumnCaption("Selected Courses");
-                
+   
+   @Override
+   protected void decorateForm(HasComponents form) {
+      // after adding components to form ..
+      courses = new TwinColGrid<Course>()
+            .addFilterableColumn(Course::getCourseName, "Course Name", "Course Name", true)
+            .withLeftColumnCaption("Available Courses").withRightColumnCaption("Selected Courses");
+   }
+   
    @Override
    protected void addTabsToForm(List<GxTabItem> tabItems) {
       tabItems.add(GxTabItem.create(1, "Courses", courses));
@@ -48,3 +52,9 @@ In the Courses Tab of StudentForm, we wil add our TwinColGrid component:
 
 .. image:: images/twin.png
  :width: 600
+
+- First, we will autowire CourseDataService to get course items.
+- Second, we will declare the TwinColGrid component with entity type.
+- Third, initialize the course component.
+- Fourth, add tab to form having twincolgrid component.
+- Fifth, we will set items of component & further UI detail.
