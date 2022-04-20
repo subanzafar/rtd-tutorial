@@ -19,4 +19,5 @@ Contents
    env
    createview
    cuscom
+   lists
    usage
