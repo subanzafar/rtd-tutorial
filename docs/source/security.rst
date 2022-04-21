@@ -28,18 +28,18 @@ After that, we will create policy.
 .. image:: images/policy.png
  :width: 600
  
- Creating Group
- --------------
+Creating Group
+--------------
  
- Then, we will create group.
+Then, we will create group.
  
- .. image:: images/group.png
+.. image:: images/group.png
  :width: 600
  
- Creating User
- -------------
+Creating User
+-------------
  
- At last, we will create the user.
+At last, we will create the user.
  
- .. image:: images/user.png
+.. image:: images/user.png
  :width: 600
