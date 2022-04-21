@@ -158,31 +158,30 @@ Here we will discuss about different methods that are being used for customizing
 - getSearchEntity() - Used to get current entity.
 - hideSecondaryComponent() - Used to hide secondary component of list.
 - hideToolbar() - Used to hide toolbar.
-initializeSearchEntity
-isDragAndDropEnabled
-isEditable
-isGridFilterEnabled
-isGridInlineEditingEnabled
-isRowDraggable
-isSecondaryComponentVisible
-onDragEnd
-onDragStart
-onDrop
-onGridItemClicked
-onGridItemDoubleClicked
-onGridItemSelect
-preEdit
-refresh
-rendererForProperty
-setColumnVisibility
-setDragAndDropEnabled
-setEditable
-setOnSingleItemSelect
-setRowDraggable
-shouldShowDeleteConfirmation
-shouldShowExportDataMenu
-shouldShowFormInDialog
-shouldShowToolbar
-showInDialog
-showSecondaryComponent
-showToolbar
+- initializeSearchEntity() - Used to initialize the search entity.
+- isDragAndDropEnabled() - Return whether drag and drop enable or not.
+- isEditable() - Return whether entity is editable or not.
+- isGridFilterEnabled() - Return true if filter for grid is enabled.
+- isGridInlineEditingEnabled - Return true if inline editing for grid is enabled.
+- isRowDraggable() - Return whether the row is draggable or not.
+- isSecondaryComponentVisible() - Return true if secondary component is visible.
+- onDragEnd() - Invoked when drag in ended.
+- onDragStart() - Invoked when drag is started.
+- onDrop() - Invoked when component is dropped.
+- onGridItemClicked() - Invoked when grid item is clicked.
+- onGridItemDoubleClicked() - Invoked when grid item is double clicked.
+- onGridItemSelect() - Invoked when grid item is selected.
+- preEdit() - Invoked before editing the item.
+- refresh() - Used to refresh the list.
+- rendererForProperty() - Used to set renderer for given property.
+- setColumnVisibility() - Used to set visibility of any column of grid.
+- setDragAndDropEnabled() - Used to set drag and drop enabled.
+- setEditable() - Used to set if item is editable.
+- setRowDraggable() - Used to set the row draggable.
+- shouldShowDeleteConfirmation() - Return whether to show confirmation on delete or not. 
+- shouldShowExportDataMenu() - Return whether to show export data menu or not.
+- shouldShowFormInDialog() - Return whether to show form in dialog or not.
+- shouldShowToolbar() - Return whether to show toolbar or not.
+- showInDialog() - Return whether to show Indialog or not.
+- showSecondaryComponent() - Business logic for showing secondary component.
+- showToolbar() - Business logic for showing toolbar.
