@@ -1,6 +1,11 @@
 Form Customization
 ==================
 
+To create a from, we will create our form class and extend it with GxAbstractEntityForm and use our model as form type. After that, we will create form by overrriding the methods provided by GxAbstractEntityForm class.
+
+.. image:: images/listform.png
+ :width: 600
+
 Here we will discuss about different methods that are being used for customizing forms in graphenee.
 
 - closeDialog() - Used to close the form dialog.
