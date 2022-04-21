@@ -19,8 +19,11 @@ First of all, we will add security menu item in FlowSetup class.
 
 .. image:: images/secmenu.png
 
+
 Creating Policies
 -----------------
+
+After that, we will create policy.
 
 .. image:: images/policy.png
  :width: 600
@@ -28,11 +31,15 @@ Creating Policies
  Creating Group
  --------------
  
+ Then, we will create group.
+ 
  .. image:: images/group.png
  :width: 600
  
  Creating User
  -------------
+ 
+ At last, we will create the user.
  
  .. image:: images/user.png
  :width: 600
