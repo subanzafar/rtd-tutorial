@@ -130,3 +130,59 @@ GxAbstractEntityTreeList Class
    }
 - getChildCount() will take the count of child entites related to list.
 - hasChildren() will take boolean i.e. if there're any child entites.
+
+List Customization
+------------------
+
+Here we will discuss about different methods that are being used for customizing lists in graphenee.
+
+- availableProperties() - Used to get the available properties of grid.
+- columnFilterForProperty() - Used to implement filter for any property of grid.
+- customizeAddMenuItem() - Used to customzie add menu item button.
+- customizeDeleteMenuItem() - Used to customzie delete menu item button.
+- customizeEditMenuItem() - Used to customzie edit menu item button.
+- dataProvider() - Used to implement data provider for current entity. 
+- decorateColumn() - Used to customzie column.
+- decorateGrid() - Used to customize grid.
+- decorateMenuBar() - Used to customzie menu bar.
+- decorateSearchForm() - Used to customize search form.
+- decorateToolbarLayout() - Used to customize toolbar layout.
+- dialogHeight() - Used to set dialog height.
+- dialogWidth() - Used to set dialog width.
+- disableShortcuts - Used to disable shortcuts for list.
+- dismissDialog() - Used to dismiss the opened dialog.
+- editItem() - Invoked when item is being edited.
+- enableShortcuts() - Used to enable shortcuts for list.
+- entityGrid() - Returns the grid for given entity.
+- exportData() - Used to implement business logic for exporting data. 
+- getSearchEntity() - Used to get current entity.
+- hideSecondaryComponent() - Used to hide secondary component of list.
+- hideToolbar() - Used to hide toolbar.
+initializeSearchEntity
+isDragAndDropEnabled
+isEditable
+isGridFilterEnabled
+isGridInlineEditingEnabled
+isRowDraggable
+isSecondaryComponentVisible
+onDragEnd
+onDragStart
+onDrop
+onGridItemClicked
+onGridItemDoubleClicked
+onGridItemSelect
+preEdit
+refresh
+rendererForProperty
+setColumnVisibility
+setDragAndDropEnabled
+setEditable
+setOnSingleItemSelect
+setRowDraggable
+shouldShowDeleteConfirmation
+shouldShowExportDataMenu
+shouldShowFormInDialog
+shouldShowToolbar
+showInDialog
+showSecondaryComponent
+showToolbar
