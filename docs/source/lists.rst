@@ -1,8 +1,8 @@
-Different Lists in Graphenee Flow
+Different Grids in Graphenee Flow
 =================================
 
-GxAbstractEntityList Class
---------------------------
+Simple List
+-----------
 
 .. code-block:: html
    :linenos:
@@ -40,8 +40,8 @@ GxAbstractEntityList Class
 - We will inject our service here to use crud methods.
 - visibleProperties() - In this method, we will specify the columns that will be displayed in list. Column names here must match with attribute names of model.
 
-GxAbstractEntityLazyList Class
-------------------------------
+Lazy List
+---------
 
 .. code-block:: html
    :linenos:
@@ -83,8 +83,8 @@ GxAbstractEntityLazyList Class
 
 - getTotalCount() will take the length / count of list of entity. 
 
-GxAbstractEntityTreeList Class
-------------------------------
+Tree List
+---------
 
 .. code-block:: html
    :linenos:
