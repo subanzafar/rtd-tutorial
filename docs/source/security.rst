@@ -20,8 +20,8 @@ First of all, we will add security menu item in FlowSetup class.
 .. image:: images/secmenu.png
 
 
-Creating Policies
------------------
+Creating Policy
+---------------
 
 After that, we will create policy.
 Here, we will set the name and then move toward statements. In statements, views will be granted or revoked. You can assign Users and Groups on other tabs if you have already created them.
