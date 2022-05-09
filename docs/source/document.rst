@@ -71,3 +71,11 @@ ApplicationPropertiesBean Class
    public class ApplicationPropertiesBean {
       private String fileSystemBasePath;
    }
+
+and its done. Click on ``+`` button to create new folder like this:
+
+.. image:: images/folder.png
+
+and then double click to open the folder and again click ``+`` button to upload document. After that, hit Save.
+
+.. image:: images/upload.png
