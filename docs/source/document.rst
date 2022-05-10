@@ -79,3 +79,7 @@ and its done. Click on ``+`` button to create new folder like this:
 and then double click to open the folder and again click ``+`` button to upload document. After that, hit Save.
 
 .. image:: images/upload.png
+
+After all of these, we will have have a final look like this. Here we can create nested folders and upload files to any level.
+
+.. image:: images/folderfile.png
